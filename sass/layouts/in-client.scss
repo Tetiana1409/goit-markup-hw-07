@@ -1,4 +1,4 @@
-.client-title {
+.icon__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -8,21 +8,21 @@
   color: var(--primary-tittle-color);
 }
 
-.client-list {
+.icon-list {
   display: flex;
   gap: 30px;
 }
 
-.client-item {
+.icon-list__item {
   width: calc((100% - 150px) / 6);
   height: 92px;
 }
 
-.client-soc-ikon {
+.icon-list__ikon {
   fill: currentColor;
 }
 
-.client-link {
+.icon-list__link {
   width: 100%;
   height: 100%;
   border: 1px solid #afb1b8;

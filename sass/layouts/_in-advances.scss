@@ -1,13 +1,13 @@
-.advances-list {
+.card-list {
   display: flex;
   gap: 30px;
 }
 
-.advances-item {
+.card-list__item {
   width: 270px;
 }
 
-.advances-wrap {
+.card-list__wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,11 +19,11 @@
   color: var(--primary-tittle-color);
 }
 
-.advances-ikon {
+.card-list__icon {
   fill: currentColor;
 }
 
-.advances-title {
+.card-list__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -33,7 +33,7 @@
   color: var(--primary-tittle-color);
 }
 
-.advances-after-title {
+.card-list__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
