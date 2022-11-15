@@ -88,39 +88,39 @@ ol {
   border-bottom: 1px solid #ececec;
 }
 
-.header-list .current {
+.menu .current {
   color: var(--accent-color);
 }
 
-.header-container {
+.header__container {
   display: flex;
 }
 
-.header-list {
+.menu {
   display: flex;
   gap: 50px;
 }
 
-.header-navigation {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.header-wrap {
+.menu__wrap {
   margin-left: auto;
 }
 
-.header-link {
+.menu__link {
   position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link:hover, .header-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
-.header-link {
+.menu__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -140,8 +140,8 @@ ol {
   border-radius: 2px;
 }
 
-.header-tel,
-.header-mail {
+.menu__tel,
+.menu__mail {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -155,17 +155,17 @@ ol {
   color: var(--primary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-tel:hover, .header-tel:focus,
-.header-mail:hover,
-.header-mail:focus {
+.menu__tel:hover, .menu__tel:focus,
+.menu__mail:hover,
+.menu__mail:focus {
   color: var(--accent-color);
 }
 
-.header-ikon {
+.menu__ikon {
   fill: currentColor;
 }
 
-.logo {
+.logo__accent-text {
   font-family: "raleway";
   font-weight: 700;
   font-size: 26px;
@@ -174,7 +174,7 @@ ol {
   color: var(--accent-color);
 }
 
-.header-logo {
+.logo__black-text {
   font-family: "raleway";
   font-weight: 700;
   font-size: 26px;
@@ -183,13 +183,13 @@ ol {
   color: var(--color-logo-black);
 }
 
-.header-link-logo {
+.navigation__logo {
   margin-right: 93px;
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.header-link-logo {
+.navigation__logo {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -197,7 +197,7 @@ ol {
   color: var(--primary-tittle-color);
 }
 
-.footer-logo {
+.logo__white-text {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -212,52 +212,51 @@ ol {
   background: var(--bg-color);
 }
 
-.footer-wrap {
+.footer__wrap {
   display: flex;
   align-items: baseline;
 }
 
-.footer-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address {
+.footer__contacts {
   margin-top: 20px;
   margin-right: 70px;
 }
 
-.footer-link-address {
+.address__link {
   color: var(--primary-white-color);
 }
-.footer-link-address {
+.address__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-link-address:hover, .footer-link-address:focus {
+.address__link:hover, .address__link:focus {
   color: var(--accent-color);
 }
 
-.footer-link-mail,
-.footer-link-tel {
+.address__mail,
+.address__tel {
   color: var(--footer-link-color);
 }
-.footer-link-mail,
-.footer-link-tel {
+.address__mail,
+.address__tel {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-link-mail:hover, .footer-link-mail:focus,
-.footer-link-tel:hover,
-.footer-link-tel:focus {
+.address__mail:hover, .address__mail:focus,
+.address__tel:hover,
+.address__tel:focus {
   color: var(--accent-color);
 }
 
-.footer-title,
-.footer-title-send {
+.footer__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -266,7 +265,11 @@ ol {
   color: var(--primary-white-color);
 }
 
-.footer-soc-list {
+.footer__title--geometry {
+  margin-bottom: 20px;
+}
+
+.soc__list {
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -274,16 +277,16 @@ ol {
   gap: 10px;
 }
 
-.footer-soc-item {
+.soc__item {
   width: 44px;
   height: 44px;
 }
 
-.footer-soc-ikon {
+.soc__ikon {
   fill: currentColor;
 }
 
-.footer-soc-link {
+.soc__link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -294,27 +297,23 @@ ol {
   color: var(--primary-white-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-soc-link:hover, .footer-soc-link:focus {
+.soc__link:hover, .soc__link:focus {
   background-color: var(--accent-color);
   outline: none;
 }
 
-.footer-send {
+.footer__send {
   margin-left: auto;
 }
 
-.footer-title-send {
-  margin-bottom: 20px;
-}
-
-.send-wrap {
+.send {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
 }
 
-.footer-send-input {
+.send__input {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -330,7 +329,7 @@ ol {
   line-height: 1.25;
   letter-spacing: 0.03em;
 }
-.footer-send-input::-moz-placeholder {
+.send__input::-moz-placeholder {
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -338,7 +337,7 @@ ol {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-send-input:-ms-input-placeholder {
+.send__input:-ms-input-placeholder {
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -346,7 +345,7 @@ ol {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-send-input::placeholder {
+.send__input::placeholder {
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -355,7 +354,7 @@ ol {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-button {
+.send__button {
   font-family: inherit;
   position: relative;
   padding: 10px 28px;
@@ -375,7 +374,7 @@ ol {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-button::after {
+.send__button::after {
   content: " ";
   position: absolute;
   display: inline-block;
@@ -385,7 +384,7 @@ ol {
   height: 24px;
   background-image: url(../images/send.svg);
 }
-.footer-button:hover, .footer-button:focus {
+.send__button:hover, .send__button:focus {
   color: var(--primary-white-color);
   background-color: var(--hero-btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -864,9 +863,7 @@ ol {
   color: #afb1b8;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.client-link:hover,
-.client-link:focus {
+.client-link:hover, .client-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
   outline: none;
